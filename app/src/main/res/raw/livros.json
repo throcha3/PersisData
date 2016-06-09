@@ -1,0 +1,30 @@
+{
+  "livros": [
+    {
+      "titulo":"Android Essencial",
+      "autor":"Ricardo Lecheta",
+      "editora":"Novatec"
+    },
+    {
+      "titulo":"Cronicas do Gelo e Fogo I",
+      "autor":"George RR Martin",
+      "editora":"LeYa"
+    },
+    {
+      "titulo":"Star Wars Legends: Obi-Wan",
+      "autor":"John Jackson Miller",
+      "editora":"Aleph"
+    },
+    {
+      "titulo":"Prince of Thorns",
+      "autor":"Mark Lawrence",
+      "editora":"Darkside"
+    },
+    {
+      "titulo":"Cavaleiro dos Sete Reinos",
+      "autor":"George Martin",
+      "editora":"LeYa"
+    }
+  ]
+
+}
