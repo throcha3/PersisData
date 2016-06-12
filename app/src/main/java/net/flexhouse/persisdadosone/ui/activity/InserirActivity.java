@@ -20,6 +20,7 @@ public class InserirActivity extends AppCompatActivity {
 
         Button botao = (Button)findViewById(R.id.btn_cadastrar);
         Button consultar = (Button)findViewById(R.id.btn_consultar);
+        Button consultaroutro = (Button)findViewById(R.id.btn_consultaroutro);
 
         assert consultar != null;
         consultar.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +28,14 @@ public class InserirActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(InserirActivity.this, ConsultaActivity.class);
                 startActivity(i);
+            }
+        });
+        assert consultaroutro != null;
+        consultaroutro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent x = new Intent(InserirActivity.this, OutraConsultaActivity.class);
+                startActivity(x);
             }
         });
 

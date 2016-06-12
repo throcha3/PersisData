@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.ConsultaActivity" />
-        <activity android:name=".ui.activity.AlteraActivity"/>
+        <activity android:name=".ui.activity.AlteraActivity" />
+        <activity android:name=".ui.activity.OutraConsultaActivity"></activity>
     </application>
 
 </manifest>

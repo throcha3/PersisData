@@ -15,6 +15,12 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="Consultar"/>
+    <Button
+        android:id="@+id/btn_consultaroutro"
+        android:layout_width="150dp"
+        android:layout_marginLeft="200dp"
+        android:layout_height="50dp"
+        android:text="ConsultarOutro"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

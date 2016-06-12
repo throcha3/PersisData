@@ -87,4 +87,9 @@ public class LivrosController {
         db.close();
     }
 
+    public Cursor getData(){
+        db = banco.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT  * FROM "+LivrosHelper.TABELA, null);
+        return cursor;
+    }
 }

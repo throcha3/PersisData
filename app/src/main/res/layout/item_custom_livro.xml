@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_list_size"
+        android:text="ID:"/>
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_marginLeft="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_list_size"
+        android:text="Titulo"/>
+    <TextView
+        android:id="@+id/txt_autor"
+        android:layout_below="@id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_list_size"
+        android:text="Autor:"/>
+    <TextView
+        android:id="@+id/txt_editora"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_list_size"
+        android:text="Editora1"/>
+</RelativeLayout>

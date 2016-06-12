@@ -1,16 +1,17 @@
 package net.flexhouse.persisdadosone.ui.activity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.content.Intent;
+import android.widget.Toast;
 
 import net.flexhouse.persisdadosone.R;
-import net.flexhouse.persisdadosone.database.helper.LivrosHelper;
 import net.flexhouse.persisdadosone.database.controller.LivrosController;
+import net.flexhouse.persisdadosone.database.helper.LivrosHelper;
 
 public class AlteraActivity extends AppCompatActivity {
 
@@ -48,7 +49,9 @@ public class AlteraActivity extends AppCompatActivity {
             public void onClick(View v) {
                 crud.alteraRegistro( Integer.parseInt(codigo), mEdtLivro.getText().toString(),mEdtAutor.getText().toString(),
                         mEdtEditora.getText().toString() );
-                Intent intent = new Intent(AlteraActivity.this,ConsultaActivity.class);
+                Toast.makeText(getBaseContext(), "Registro alterado com sucesso!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(AlteraActivity.this,InserirActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -58,7 +61,9 @@ public class AlteraActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 crud.deletaRegistro(Integer.parseInt(codigo));
-                Intent intent = new Intent(AlteraActivity.this,ConsultaActivity.class);
+                Toast.makeText(getBaseContext(), "Registro deletado com sucesso!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(AlteraActivity.this,InserirActivity.class);
                 startActivity(intent);
                 finish();
             }
